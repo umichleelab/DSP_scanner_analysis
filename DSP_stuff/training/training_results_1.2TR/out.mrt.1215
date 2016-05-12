@@ -1,0 +1,75 @@
+
+++ total time = 300.0, (stim = 157.5, rest = 142.5)
+   init rest = 4.0, end rest = 12.0, min rest = 1.5
+   total ISI = 126.5, rand ISI = 21.5
+   rand ISI rest time = 215 intervals of 0.100 seconds
+
+
+++ total time = 300.0, (stim = 157.5, rest = 142.5)
+   init rest = 4.0, end rest = 12.0, min rest = 1.5
+   total ISI = 126.5, rand ISI = 21.5
+   rand ISI rest time = 215 intervals of 0.100 seconds
+
+
+++ total time = 300.0, (stim = 157.5, rest = 142.5)
+   init rest = 4.0, end rest = 12.0, min rest = 1.5
+   total ISI = 126.5, rand ISI = 21.5
+   rand ISI rest time = 215 intervals of 0.100 seconds
+
+
+++ total time = 300.0, (stim = 157.5, rest = 142.5)
+   init rest = 4.0, end rest = 12.0, min rest = 1.5
+   total ISI = 126.5, rand ISI = 21.5
+   rand ISI rest time = 215 intervals of 0.100 seconds
+
+
+++ total time = 300.0, (stim = 157.5, rest = 142.5)
+   init rest = 4.0, end rest = 12.0, min rest = 1.5
+   total ISI = 126.5, rand ISI = 21.5
+   rand ISI rest time = 215 intervals of 0.100 seconds
+
+
+++ total time = 300.0, (stim = 157.5, rest = 142.5)
+   init rest = 4.0, end rest = 12.0, min rest = 1.5
+   total ISI = 126.5, rand ISI = 21.5
+   rand ISI rest time = 215 intervals of 0.100 seconds
+
+
+++ total time = 300.0, (stim = 157.5, rest = 142.5)
+   init rest = 4.0, end rest = 12.0, min rest = 1.5
+   total ISI = 126.5, rand ISI = 21.5
+   rand ISI rest time = 215 intervals of 0.100 seconds
+
+
+++ total time = 300.0, (stim = 157.5, rest = 142.5)
+   init rest = 4.0, end rest = 12.0, min rest = 1.5
+   total ISI = 126.5, rand ISI = 21.5
+   rand ISI rest time = 215 intervals of 0.100 seconds
+
+writing timing file: stimes.1215_01_A.1D
+writing timing file: stimes.1215_02_B.1D
+writing timing file: stimes.1215_03_random.1D
+writing timing file: stimes.1215_04_Amove.1D
+writing timing file: stimes.1215_05_Bmove.1D
+writing timing file: stimes.1215_06_random_move.1D
+saving 3dD command to file 'cmd.3dd.1215'...
+
+
+ISI statistics :
+
+data              min      mean     max     stdev
+-----------     -------  -------  -------  -------
+pre-rest          4.000    4.187    4.500    0.155
+post-rest        13.600   13.963   14.500    0.329
+
+run #0 ISI        1.500    1.807    3.500    0.377
+run #1 ISI        1.500    1.809    2.900    0.296
+run #2 ISI        1.500    1.799    2.600    0.273
+run #3 ISI        1.500    1.793    2.500    0.289
+run #4 ISI        1.500    1.803    2.800    0.318
+run #5 ISI        1.500    1.794    2.500    0.280
+run #6 ISI        1.500    1.809    3.300    0.391
+run #7 ISI        1.500    1.804    2.900    0.354
+
+all runs ISI      1.500    1.802    3.500    0.323
+

@@ -1,0 +1,106 @@
+# -------------------------------------------------------
+# create 3dDeconvolve -nodata command
+
+3dDeconvolve                                                      \
+    -nodata 1440 2.000                                            \
+    -polort 3                                                     \
+    -concat '1D: 0 180 360 540 720 900 1080 1260'                 \
+    -num_stimts 12                                                \
+    -stim_times 1 stimes.3989_01_A5.1D 'BLOCK(1.5,1)'             \
+    -stim_label 1 A5                                              \
+    -stim_times 2 stimes.3989_02_A10.1D 'BLOCK(1.5,1)'            \
+    -stim_label 2 A10                                             \
+    -stim_times 3 stimes.3989_03_A20.1D 'BLOCK(1.5,1)'            \
+    -stim_label 3 A20                                             \
+    -stim_times 4 stimes.3989_04_B5.1D 'BLOCK(1.5,1)'             \
+    -stim_label 4 B5                                              \
+    -stim_times 5 stimes.3989_05_B10.1D 'BLOCK(1.5,1)'            \
+    -stim_label 5 B10                                             \
+    -stim_times 6 stimes.3989_06_B20.1D 'BLOCK(1.5,1)'            \
+    -stim_label 6 B20                                             \
+    -stim_times 7 stimes.3989_07_A5move.1D 'BLOCK(3,1)'           \
+    -stim_label 7 A5move                                          \
+    -stim_times 8 stimes.3989_08_A10move.1D 'BLOCK(3,1)'          \
+    -stim_label 8 A10move                                         \
+    -stim_times 9 stimes.3989_09_A20move.1D 'BLOCK(3,1)'          \
+    -stim_label 9 A20move                                         \
+    -stim_times 10 stimes.3989_10_B5move.1D 'BLOCK(3,1)'          \
+    -stim_label 10 B5move                                         \
+    -stim_times 11 stimes.3989_11_B10move.1D 'BLOCK(3,1)'         \
+    -stim_label 11 B10move                                        \
+    -stim_times 12 stimes.3989_12_B20move.1D 'BLOCK(3,1)'         \
+    -stim_label 12 B20move                                        \
+    -num_glt 66                                                   \
+    -gltsym 'SYM: A5 -A10' -glt_label 1 A5-A10                    \
+    -gltsym 'SYM: A5 -A20' -glt_label 2 A5-A20                    \
+    -gltsym 'SYM: A5 -B5' -glt_label 3 A5-B5                      \
+    -gltsym 'SYM: A5 -B10' -glt_label 4 A5-B10                    \
+    -gltsym 'SYM: A5 -B20' -glt_label 5 A5-B20                    \
+    -gltsym 'SYM: A5 -A5move' -glt_label 6 A5-A5move              \
+    -gltsym 'SYM: A5 -A10move' -glt_label 7 A5-A10move            \
+    -gltsym 'SYM: A5 -A20move' -glt_label 8 A5-A20move            \
+    -gltsym 'SYM: A5 -B5move' -glt_label 9 A5-B5move              \
+    -gltsym 'SYM: A5 -B10move' -glt_label 10 A5-B10move           \
+    -gltsym 'SYM: A5 -B20move' -glt_label 11 A5-B20move           \
+    -gltsym 'SYM: A10 -A20' -glt_label 12 A10-A20                 \
+    -gltsym 'SYM: A10 -B5' -glt_label 13 A10-B5                   \
+    -gltsym 'SYM: A10 -B10' -glt_label 14 A10-B10                 \
+    -gltsym 'SYM: A10 -B20' -glt_label 15 A10-B20                 \
+    -gltsym 'SYM: A10 -A5move' -glt_label 16 A10-A5move           \
+    -gltsym 'SYM: A10 -A10move' -glt_label 17 A10-A10move         \
+    -gltsym 'SYM: A10 -A20move' -glt_label 18 A10-A20move         \
+    -gltsym 'SYM: A10 -B5move' -glt_label 19 A10-B5move           \
+    -gltsym 'SYM: A10 -B10move' -glt_label 20 A10-B10move         \
+    -gltsym 'SYM: A10 -B20move' -glt_label 21 A10-B20move         \
+    -gltsym 'SYM: A20 -B5' -glt_label 22 A20-B5                   \
+    -gltsym 'SYM: A20 -B10' -glt_label 23 A20-B10                 \
+    -gltsym 'SYM: A20 -B20' -glt_label 24 A20-B20                 \
+    -gltsym 'SYM: A20 -A5move' -glt_label 25 A20-A5move           \
+    -gltsym 'SYM: A20 -A10move' -glt_label 26 A20-A10move         \
+    -gltsym 'SYM: A20 -A20move' -glt_label 27 A20-A20move         \
+    -gltsym 'SYM: A20 -B5move' -glt_label 28 A20-B5move           \
+    -gltsym 'SYM: A20 -B10move' -glt_label 29 A20-B10move         \
+    -gltsym 'SYM: A20 -B20move' -glt_label 30 A20-B20move         \
+    -gltsym 'SYM: B5 -B10' -glt_label 31 B5-B10                   \
+    -gltsym 'SYM: B5 -B20' -glt_label 32 B5-B20                   \
+    -gltsym 'SYM: B5 -A5move' -glt_label 33 B5-A5move             \
+    -gltsym 'SYM: B5 -A10move' -glt_label 34 B5-A10move           \
+    -gltsym 'SYM: B5 -A20move' -glt_label 35 B5-A20move           \
+    -gltsym 'SYM: B5 -B5move' -glt_label 36 B5-B5move             \
+    -gltsym 'SYM: B5 -B10move' -glt_label 37 B5-B10move           \
+    -gltsym 'SYM: B5 -B20move' -glt_label 38 B5-B20move           \
+    -gltsym 'SYM: B10 -B20' -glt_label 39 B10-B20                 \
+    -gltsym 'SYM: B10 -A5move' -glt_label 40 B10-A5move           \
+    -gltsym 'SYM: B10 -A10move' -glt_label 41 B10-A10move         \
+    -gltsym 'SYM: B10 -A20move' -glt_label 42 B10-A20move         \
+    -gltsym 'SYM: B10 -B5move' -glt_label 43 B10-B5move           \
+    -gltsym 'SYM: B10 -B10move' -glt_label 44 B10-B10move         \
+    -gltsym 'SYM: B10 -B20move' -glt_label 45 B10-B20move         \
+    -gltsym 'SYM: B20 -A5move' -glt_label 46 B20-A5move           \
+    -gltsym 'SYM: B20 -A10move' -glt_label 47 B20-A10move         \
+    -gltsym 'SYM: B20 -A20move' -glt_label 48 B20-A20move         \
+    -gltsym 'SYM: B20 -B5move' -glt_label 49 B20-B5move           \
+    -gltsym 'SYM: B20 -B10move' -glt_label 50 B20-B10move         \
+    -gltsym 'SYM: B20 -B20move' -glt_label 51 B20-B20move         \
+    -gltsym 'SYM: A5move -A10move' -glt_label 52 A5move-A10move   \
+    -gltsym 'SYM: A5move -A20move' -glt_label 53 A5move-A20move   \
+    -gltsym 'SYM: A5move -B5move' -glt_label 54 A5move-B5move     \
+    -gltsym 'SYM: A5move -B10move' -glt_label 55 A5move-B10move   \
+    -gltsym 'SYM: A5move -B20move' -glt_label 56 A5move-B20move   \
+    -gltsym 'SYM: A10move -A20move' -glt_label 57 A10move-A20move \
+    -gltsym 'SYM: A10move -B5move' -glt_label 58 A10move-B5move   \
+    -gltsym 'SYM: A10move -B10move' -glt_label 59 A10move-B10move \
+    -gltsym 'SYM: A10move -B20move' -glt_label 60 A10move-B20move \
+    -gltsym 'SYM: A20move -B5move' -glt_label 61 A20move-B5move   \
+    -gltsym 'SYM: A20move -B10move' -glt_label 62 A20move-B10move \
+    -gltsym 'SYM: A20move -B20move' -glt_label 63 A20move-B20move \
+    -gltsym 'SYM: B5move -B10move' -glt_label 64 B5move-B10move   \
+    -gltsym 'SYM: B5move -B20move' -glt_label 65 B5move-B20move   \
+    -gltsym 'SYM: B10move -B20move' -glt_label 66 B10move-B20move \
+    -x1D X.xmat.1D
+
+# compute the sum of non-baseline regressors
+3dTstat -sum -prefix sum_ideal.1D X.xmat.1D'[32..$]'
+
+# consider plotting the SUM below non-polort regressors
+# command: 1dplot -xlabel Time -ynames SUM - sum_ideal.1D X.xmat.1D'[32..$]'

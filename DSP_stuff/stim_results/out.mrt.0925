@@ -1,0 +1,81 @@
+
+++ total time = 420.0, (stim = 180.0, rest = 240.0)
+   init rest = 4.0, end rest = 12.0, min rest = 2.0
+   total ISI = 224.0, rand ISI = 80.0
+   rand ISI rest time = 800 intervals of 0.100 seconds
+
+
+++ total time = 420.0, (stim = 180.0, rest = 240.0)
+   init rest = 4.0, end rest = 12.0, min rest = 2.0
+   total ISI = 224.0, rand ISI = 80.0
+   rand ISI rest time = 800 intervals of 0.100 seconds
+
+
+++ total time = 420.0, (stim = 180.0, rest = 240.0)
+   init rest = 4.0, end rest = 12.0, min rest = 2.0
+   total ISI = 224.0, rand ISI = 80.0
+   rand ISI rest time = 800 intervals of 0.100 seconds
+
+
+++ total time = 420.0, (stim = 180.0, rest = 240.0)
+   init rest = 4.0, end rest = 12.0, min rest = 2.0
+   total ISI = 224.0, rand ISI = 80.0
+   rand ISI rest time = 800 intervals of 0.100 seconds
+
+
+++ total time = 420.0, (stim = 180.0, rest = 240.0)
+   init rest = 4.0, end rest = 12.0, min rest = 2.0
+   total ISI = 224.0, rand ISI = 80.0
+   rand ISI rest time = 800 intervals of 0.100 seconds
+
+
+++ total time = 420.0, (stim = 180.0, rest = 240.0)
+   init rest = 4.0, end rest = 12.0, min rest = 2.0
+   total ISI = 224.0, rand ISI = 80.0
+   rand ISI rest time = 800 intervals of 0.100 seconds
+
+
+++ total time = 420.0, (stim = 180.0, rest = 240.0)
+   init rest = 4.0, end rest = 12.0, min rest = 2.0
+   total ISI = 224.0, rand ISI = 80.0
+   rand ISI rest time = 800 intervals of 0.100 seconds
+
+
+++ total time = 420.0, (stim = 180.0, rest = 240.0)
+   init rest = 4.0, end rest = 12.0, min rest = 2.0
+   total ISI = 224.0, rand ISI = 80.0
+   rand ISI rest time = 800 intervals of 0.100 seconds
+
+writing timing file: stimes.0925_01_A5.1D
+writing timing file: stimes.0925_02_A10.1D
+writing timing file: stimes.0925_03_A20.1D
+writing timing file: stimes.0925_04_B5.1D
+writing timing file: stimes.0925_05_B10.1D
+writing timing file: stimes.0925_06_B20.1D
+writing timing file: stimes.0925_07_A5move.1D
+writing timing file: stimes.0925_08_A10move.1D
+writing timing file: stimes.0925_09_A20move.1D
+writing timing file: stimes.0925_10_B5move.1D
+writing timing file: stimes.0925_11_B10move.1D
+writing timing file: stimes.0925_12_B20move.1D
+saving 3dD command to file 'cmd.3dd.0925'...
+
+
+ISI statistics :
+
+data              min      mean     max     stdev
+-----------     -------  -------  -------  -------
+pre-rest          4.100    5.000    6.500    0.899
+post-rest        14.100   15.250   16.300    0.857
+
+run #0 ISI        2.000    3.075    8.200    1.276
+run #1 ISI        2.000    3.093    6.700    0.968
+run #2 ISI        2.000    3.090   12.100    1.546
+run #3 ISI        2.000    3.100    6.700    0.966
+run #4 ISI        2.000    3.096   10.200    1.333
+run #5 ISI        2.000    3.097    5.300    0.932
+run #6 ISI        2.000    3.097    7.200    0.953
+run #7 ISI        2.000    3.113    6.500    0.987
+
+all runs ISI      2.000    3.095   12.100    1.134
+

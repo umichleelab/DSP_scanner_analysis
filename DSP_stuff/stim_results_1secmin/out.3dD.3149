@@ -1,0 +1,533 @@
+++ 3dDeconvolve: AFNI version=AFNI_2011_12_21_1014 (Dec 16 2015) [64-bit]
+++ Authored by: B. Douglas Ward, et al.
+++ using TR=2 seconds for -stim_times and -nodata
+++ using NT=1440 time points for -nodata
+++ Input polort=3; Longest run=360.0 s; Recommended minimum polort=3 ++ OK ++
+++ -stim_times using TR=2 s for stimulus timing conversion
+++ -stim_times using TR=2 s for any -iresp output datasets
+++  [you can alter the -iresp TR via the -TR_times option]
+++ ** -stim_times NOTE ** guessing GLOBAL times if 1 time per line; LOCAL otherwise
+++ ** GUESSED ** -stim_times 1 using LOCAL times
+++ ** GUESSED ** -stim_times 2 using LOCAL times
+++ ** GUESSED ** -stim_times 3 using LOCAL times
+++ ** GUESSED ** -stim_times 4 using LOCAL times
+++ ** GUESSED ** -stim_times 5 using LOCAL times
+++ ** GUESSED ** -stim_times 6 using LOCAL times
+++ ** GUESSED ** -stim_times 7 using LOCAL times
+++ ** GUESSED ** -stim_times 8 using LOCAL times
+++ ** GUESSED ** -stim_times 9 using LOCAL times
+++ ** GUESSED ** -stim_times 10 using LOCAL times
+++ ** GUESSED ** -stim_times 11 using LOCAL times
+++ ** GUESSED ** -stim_times 12 using LOCAL times
+------------------------------------------------------------
+GLT matrix from 'SYM: A5 -A10':
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1  -1   0   0   0   0   0   0   0   0   0   0 
+ 
+------------------------------------------------------------
+GLT matrix from 'SYM: A5 -A20':
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   0  -1   0   0   0   0   0   0   0   0   0 
+ 
+------------------------------------------------------------
+GLT matrix from 'SYM: A5 -B5':
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   0   0  -1   0   0   0   0   0   0   0   0 
+ 
+------------------------------------------------------------
+GLT matrix from 'SYM: A5 -B10':
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   0   0   0  -1   0   0   0   0   0   0   0 
+ 
+------------------------------------------------------------
+GLT matrix from 'SYM: A5 -B20':
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   0   0   0   0  -1   0   0   0   0   0   0 
+ 
+------------------------------------------------------------
+GLT matrix from 'SYM: A5 -A5move':
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   0   0   0   0   0  -1   0   0   0   0   0 
+ 
+------------------------------------------------------------
+GLT matrix from 'SYM: A5 -A10move':
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   0   0   0   0   0   0  -1   0   0   0   0 
+ 
+------------------------------------------------------------
+GLT matrix from 'SYM: A5 -A20move':
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   0   0   0   0   0   0   0  -1   0   0   0 
+ 
+------------------------------------------------------------
+GLT matrix from 'SYM: A5 -B5move':
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   0   0   0   0   0   0   0   0  -1   0   0 
+ 
+------------------------------------------------------------
+GLT matrix from 'SYM: A5 -B10move':
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   0   0   0   0   0   0   0   0   0  -1   0 
+ 
+------------------------------------------------------------
+GLT matrix from 'SYM: A5 -B20move':
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   0   0   0   0   0   0   0   0   0   0  -1 
+ 
+------------------------------------------------------------
+GLT matrix from 'SYM: A10 -A20':
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1  -1   0   0   0   0   0   0   0   0   0 
+ 
+------------------------------------------------------------
+GLT matrix from 'SYM: A10 -B5':
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   0  -1   0   0   0   0   0   0   0   0 
+ 
+------------------------------------------------------------
+GLT matrix from 'SYM: A10 -B10':
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   0   0  -1   0   0   0   0   0   0   0 
+ 
+------------------------------------------------------------
+GLT matrix from 'SYM: A10 -B20':
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   0   0   0  -1   0   0   0   0   0   0 
+ 
+------------------------------------------------------------
+GLT matrix from 'SYM: A10 -A5move':
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   0   0   0   0  -1   0   0   0   0   0 
+ 
+------------------------------------------------------------
+GLT matrix from 'SYM: A10 -A10move':
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   0   0   0   0   0  -1   0   0   0   0 
+ 
+------------------------------------------------------------
+GLT matrix from 'SYM: A10 -A20move':
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   0   0   0   0   0   0  -1   0   0   0 
+ 
+------------------------------------------------------------
+GLT matrix from 'SYM: A10 -B5move':
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   0   0   0   0   0   0   0  -1   0   0 
+ 
+------------------------------------------------------------
+GLT matrix from 'SYM: A10 -B10move':
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   0   0   0   0   0   0   0   0  -1   0 
+ 
+------------------------------------------------------------
+GLT matrix from 'SYM: A10 -B20move':
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   0   0   0   0   0   0   0   0   0  -1 
+ 
+------------------------------------------------------------
+GLT matrix from 'SYM: A20 -B5':
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1  -1   0   0   0   0   0   0   0   0 
+ 
+------------------------------------------------------------
+GLT matrix from 'SYM: A20 -B10':
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   0  -1   0   0   0   0   0   0   0 
+ 
+------------------------------------------------------------
+GLT matrix from 'SYM: A20 -B20':
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   0   0  -1   0   0   0   0   0   0 
+ 
+------------------------------------------------------------
+GLT matrix from 'SYM: A20 -A5move':
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   0   0   0  -1   0   0   0   0   0 
+ 
+------------------------------------------------------------
+GLT matrix from 'SYM: A20 -A10move':
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   0   0   0   0  -1   0   0   0   0 
+ 
+------------------------------------------------------------
+GLT matrix from 'SYM: A20 -A20move':
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   0   0   0   0   0  -1   0   0   0 
+ 
+------------------------------------------------------------
+GLT matrix from 'SYM: A20 -B5move':
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   0   0   0   0   0   0  -1   0   0 
+ 
+------------------------------------------------------------
+GLT matrix from 'SYM: A20 -B10move':
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   0   0   0   0   0   0   0  -1   0 
+ 
+------------------------------------------------------------
+GLT matrix from 'SYM: A20 -B20move':
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   0   0   0   0   0   0   0   0  -1 
+ 
+------------------------------------------------------------
+GLT matrix from 'SYM: B5 -B10':
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1  -1   0   0   0   0   0   0   0 
+ 
+------------------------------------------------------------
+GLT matrix from 'SYM: B5 -B20':
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   0  -1   0   0   0   0   0   0 
+ 
+------------------------------------------------------------
+GLT matrix from 'SYM: B5 -A5move':
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   0   0  -1   0   0   0   0   0 
+ 
+------------------------------------------------------------
+GLT matrix from 'SYM: B5 -A10move':
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   0   0   0  -1   0   0   0   0 
+ 
+------------------------------------------------------------
+GLT matrix from 'SYM: B5 -A20move':
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   0   0   0   0  -1   0   0   0 
+ 
+------------------------------------------------------------
+GLT matrix from 'SYM: B5 -B5move':
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   0   0   0   0   0  -1   0   0 
+ 
+------------------------------------------------------------
+GLT matrix from 'SYM: B5 -B10move':
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   0   0   0   0   0   0  -1   0 
+ 
+------------------------------------------------------------
+GLT matrix from 'SYM: B5 -B20move':
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   0   0   0   0   0   0   0  -1 
+ 
+------------------------------------------------------------
+GLT matrix from 'SYM: B10 -B20':
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1  -1   0   0   0   0   0   0 
+ 
+------------------------------------------------------------
+GLT matrix from 'SYM: B10 -A5move':
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   0  -1   0   0   0   0   0 
+ 
+------------------------------------------------------------
+GLT matrix from 'SYM: B10 -A10move':
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   0   0  -1   0   0   0   0 
+ 
+------------------------------------------------------------
+GLT matrix from 'SYM: B10 -A20move':
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   0   0   0  -1   0   0   0 
+ 
+------------------------------------------------------------
+GLT matrix from 'SYM: B10 -B5move':
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   0   0   0   0  -1   0   0 
+ 
+------------------------------------------------------------
+GLT matrix from 'SYM: B10 -B10move':
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   0   0   0   0   0  -1   0 
+ 
+------------------------------------------------------------
+GLT matrix from 'SYM: B10 -B20move':
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   0   0   0   0   0   0  -1 
+ 
+------------------------------------------------------------
+GLT matrix from 'SYM: B20 -A5move':
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1  -1   0   0   0   0   0 
+ 
+------------------------------------------------------------
+GLT matrix from 'SYM: B20 -A10move':
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   0  -1   0   0   0   0 
+ 
+------------------------------------------------------------
+GLT matrix from 'SYM: B20 -A20move':
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   0   0  -1   0   0   0 
+ 
+------------------------------------------------------------
+GLT matrix from 'SYM: B20 -B5move':
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   0   0   0  -1   0   0 
+ 
+------------------------------------------------------------
+GLT matrix from 'SYM: B20 -B10move':
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   0   0   0   0  -1   0 
+ 
+------------------------------------------------------------
+GLT matrix from 'SYM: B20 -B20move':
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   0   0   0   0   0  -1 
+ 
+------------------------------------------------------------
+GLT matrix from 'SYM: A5move -A10move':
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1  -1   0   0   0   0 
+ 
+------------------------------------------------------------
+GLT matrix from 'SYM: A5move -A20move':
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   0  -1   0   0   0 
+ 
+------------------------------------------------------------
+GLT matrix from 'SYM: A5move -B5move':
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   0   0  -1   0   0 
+ 
+------------------------------------------------------------
+GLT matrix from 'SYM: A5move -B10move':
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   0   0   0  -1   0 
+ 
+------------------------------------------------------------
+GLT matrix from 'SYM: A5move -B20move':
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   0   0   0   0  -1 
+ 
+------------------------------------------------------------
+GLT matrix from 'SYM: A10move -A20move':
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1  -1   0   0   0 
+ 
+------------------------------------------------------------
+GLT matrix from 'SYM: A10move -B5move':
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   0  -1   0   0 
+ 
+------------------------------------------------------------
+GLT matrix from 'SYM: A10move -B10move':
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   0   0  -1   0 
+ 
+------------------------------------------------------------
+GLT matrix from 'SYM: A10move -B20move':
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   0   0   0  -1 
+ 
+------------------------------------------------------------
+GLT matrix from 'SYM: A20move -B5move':
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1  -1   0   0 
+ 
+------------------------------------------------------------
+GLT matrix from 'SYM: A20move -B10move':
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   0  -1   0 
+ 
+------------------------------------------------------------
+GLT matrix from 'SYM: A20move -B20move':
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   0   0  -1 
+ 
+------------------------------------------------------------
+GLT matrix from 'SYM: B5move -B10move':
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1  -1   0 
+ 
+------------------------------------------------------------
+GLT matrix from 'SYM: B5move -B20move':
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   0  -1 
+ 
+------------------------------------------------------------
+GLT matrix from 'SYM: B10move -B20move':
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1  -1 
+ 
+++ Number of time points: 1440 (no censoring)
+ + Number of parameters:  44 [32 baseline ; 12 signal]
+++ Wrote matrix values to file X.xmat.1D
+++ ----- Signal+Baseline matrix condition [X] (1440x44):  2.55945  ++ VERY GOOD ++
+++ ----- Signal-only matrix condition [X] (1440x12):  1.45837  ++ VERY GOOD ++
+++ ----- Baseline-only matrix condition [X] (1440x32):  1.01269  ++ VERY GOOD ++
+++ ----- polort-only matrix condition [X] (1440x32):  1.01269  ++ VERY GOOD ++
+++ Wrote matrix values to file X_XtXinv.xmat.1D
+++ +++++ Matrix inverse average error = 2.7047e-16  ++ VERY GOOD ++
+++ Matrix setup time = 0.55 s
+
+Stimulus: A5 
+  h[ 0] norm. std. dev. =   0.1369
+
+Stimulus: A10 
+  h[ 0] norm. std. dev. =   0.1367
+
+Stimulus: A20 
+  h[ 0] norm. std. dev. =   0.1348
+
+Stimulus: B5 
+  h[ 0] norm. std. dev. =   0.1367
+
+Stimulus: B10 
+  h[ 0] norm. std. dev. =   0.1371
+
+Stimulus: B20 
+  h[ 0] norm. std. dev. =   0.1356
+
+Stimulus: A5move 
+  h[ 0] norm. std. dev. =   0.1362
+
+Stimulus: A10move 
+  h[ 0] norm. std. dev. =   0.1345
+
+Stimulus: A20move 
+  h[ 0] norm. std. dev. =   0.1355
+
+Stimulus: B5move 
+  h[ 0] norm. std. dev. =   0.1370
+
+Stimulus: B10move 
+  h[ 0] norm. std. dev. =   0.1377
+
+Stimulus: B20move 
+  h[ 0] norm. std. dev. =   0.1380
+
+General Linear Test: A5-A10 
+  LC[0] norm. std. dev. =   0.1597 
+
+General Linear Test: A5-A20 
+  LC[0] norm. std. dev. =   0.1595 
+
+General Linear Test: A5-B5 
+  LC[0] norm. std. dev. =   0.1633 
+
+General Linear Test: A5-B10 
+  LC[0] norm. std. dev. =   0.1623 
+
+General Linear Test: A5-B20 
+  LC[0] norm. std. dev. =   0.1632 
+
+General Linear Test: A5-A5move 
+  LC[0] norm. std. dev. =   0.1857 
+
+General Linear Test: A5-A10move 
+  LC[0] norm. std. dev. =   0.1698 
+
+General Linear Test: A5-A20move 
+  LC[0] norm. std. dev. =   0.1706 
+
+General Linear Test: A5-B5move 
+  LC[0] norm. std. dev. =   0.1703 
+
+General Linear Test: A5-B10move 
+  LC[0] norm. std. dev. =   0.1712 
+
+General Linear Test: A5-B20move 
+  LC[0] norm. std. dev. =   0.1705 
+
+General Linear Test: A10-A20 
+  LC[0] norm. std. dev. =   0.1616 
+
+General Linear Test: A10-B5 
+  LC[0] norm. std. dev. =   0.1616 
+
+General Linear Test: A10-B10 
+  LC[0] norm. std. dev. =   0.1634 
+
+General Linear Test: A10-B20 
+  LC[0] norm. std. dev. =   0.1627 
+
+General Linear Test: A10-A5move 
+  LC[0] norm. std. dev. =   0.1691 
+
+General Linear Test: A10-A10move 
+  LC[0] norm. std. dev. =   0.1912 
+
+General Linear Test: A10-A20move 
+  LC[0] norm. std. dev. =   0.1709 
+
+General Linear Test: A10-B5move 
+  LC[0] norm. std. dev. =   0.1712 
+
+General Linear Test: A10-B10move 
+  LC[0] norm. std. dev. =   0.1721 
+
+General Linear Test: A10-B20move 
+  LC[0] norm. std. dev. =   0.1716 
+
+General Linear Test: A20-B5 
+  LC[0] norm. std. dev. =   0.1639 
+
+General Linear Test: A20-B10 
+  LC[0] norm. std. dev. =   0.1629 
+
+General Linear Test: A20-B20 
+  LC[0] norm. std. dev. =   0.1631 
+
+General Linear Test: A20-A5move 
+  LC[0] norm. std. dev. =   0.1736 
+
+General Linear Test: A20-A10move 
+  LC[0] norm. std. dev. =   0.1714 
+
+General Linear Test: A20-A20move 
+  LC[0] norm. std. dev. =   0.1917 
+
+General Linear Test: A20-B5move 
+  LC[0] norm. std. dev. =   0.1716 
+
+General Linear Test: A20-B10move 
+  LC[0] norm. std. dev. =   0.1736 
+
+General Linear Test: A20-B20move 
+  LC[0] norm. std. dev. =   0.1749 
+
+General Linear Test: B5-B10 
+  LC[0] norm. std. dev. =   0.1640 
+
+General Linear Test: B5-B20 
+  LC[0] norm. std. dev. =   0.1633 
+
+General Linear Test: B5-A5move 
+  LC[0] norm. std. dev. =   0.1699 
+
+General Linear Test: B5-A10move 
+  LC[0] norm. std. dev. =   0.1753 
+
+General Linear Test: B5-A20move 
+  LC[0] norm. std. dev. =   0.1720 
+
+General Linear Test: B5-B5move 
+  LC[0] norm. std. dev. =   0.1936 
+
+General Linear Test: B5-B10move 
+  LC[0] norm. std. dev. =   0.1742 
+
+General Linear Test: B5-B20move 
+  LC[0] norm. std. dev. =   0.1725 
+
+General Linear Test: B10-B20 
+  LC[0] norm. std. dev. =   0.1656 
+
+General Linear Test: B10-A5move 
+  LC[0] norm. std. dev. =   0.1708 
+
+General Linear Test: B10-A10move 
+  LC[0] norm. std. dev. =   0.1731 
+
+General Linear Test: B10-A20move 
+  LC[0] norm. std. dev. =   0.1743 
+
+General Linear Test: B10-B5move 
+  LC[0] norm. std. dev. =   0.1752 
+
+General Linear Test: B10-B10move 
+  LC[0] norm. std. dev. =   0.1984 
+
+General Linear Test: B10-B20move 
+  LC[0] norm. std. dev. =   0.1760 
+
+General Linear Test: B20-A5move 
+  LC[0] norm. std. dev. =   0.1733 
+
+General Linear Test: B20-A10move 
+  LC[0] norm. std. dev. =   0.1742 
+
+General Linear Test: B20-A20move 
+  LC[0] norm. std. dev. =   0.1738 
+
+General Linear Test: B20-B5move 
+  LC[0] norm. std. dev. =   0.1731 
+
+General Linear Test: B20-B10move 
+  LC[0] norm. std. dev. =   0.1768 
+
+General Linear Test: B20-B20move 
+  LC[0] norm. std. dev. =   0.1974 
+
+General Linear Test: A5move-A10move 
+  LC[0] norm. std. dev. =   0.1552 
+
+General Linear Test: A5move-A20move 
+  LC[0] norm. std. dev. =   0.1552 
+
+General Linear Test: A5move-B5move 
+  LC[0] norm. std. dev. =   0.1584 
+
+General Linear Test: A5move-B10move 
+  LC[0] norm. std. dev. =   0.1575 
+
+General Linear Test: A5move-B20move 
+  LC[0] norm. std. dev. =   0.1577 
+
+General Linear Test: A10move-A20move 
+  LC[0] norm. std. dev. =   0.1568 
+
+General Linear Test: A10move-B5move 
+  LC[0] norm. std. dev. =   0.1576 
+
+General Linear Test: A10move-B10move 
+  LC[0] norm. std. dev. =   0.1585 
+
+General Linear Test: A10move-B20move 
+  LC[0] norm. std. dev. =   0.1583 
+
+General Linear Test: A20move-B5move 
+  LC[0] norm. std. dev. =   0.1589 
+
+General Linear Test: A20move-B10move 
+  LC[0] norm. std. dev. =   0.1583 
+
+General Linear Test: A20move-B20move 
+  LC[0] norm. std. dev. =   0.1589 
+
+General Linear Test: B5move-B10move 
+  LC[0] norm. std. dev. =   0.1596 
+
+General Linear Test: B5move-B20move 
+  LC[0] norm. std. dev. =   0.1587 
+
+General Linear Test: B10move-B20move 
+  LC[0] norm. std. dev. =   0.1605 
+++ 3dTstat: AFNI version=AFNI_2011_12_21_1014 (Dec 16 2015) [64-bit]
+++ Authored by: KR Hammett & RW Cox
+*+ WARNING: Input dataset is not 3D+time; assuming TR=1.0
+++ Output dataset ./sum_ideal.1D

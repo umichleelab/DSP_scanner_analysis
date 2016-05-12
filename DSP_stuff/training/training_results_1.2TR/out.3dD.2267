@@ -1,0 +1,152 @@
+++ 3dDeconvolve: AFNI version=AFNI_2011_12_21_1014 (Dec 16 2015) [64-bit]
+++ Authored by: B. Douglas Ward, et al.
+++ using TR=1.2 seconds for -stim_times and -nodata
+++ using NT=2000 time points for -nodata
+++ Input polort=3; Longest run=300.0 s; Recommended minimum polort=3 ++ OK ++
+++ -stim_times using TR=1.2 s for stimulus timing conversion
+++ -stim_times using TR=1.2 s for any -iresp output datasets
+++  [you can alter the -iresp TR via the -TR_times option]
+++ ** -stim_times NOTE ** guessing GLOBAL times if 1 time per line; LOCAL otherwise
+++ ** GUESSED ** -stim_times 1 using LOCAL times
+++ ** GUESSED ** -stim_times 2 using LOCAL times
+++ ** GUESSED ** -stim_times 3 using LOCAL times
+++ ** GUESSED ** -stim_times 4 using LOCAL times
+++ ** GUESSED ** -stim_times 5 using LOCAL times
+++ ** GUESSED ** -stim_times 6 using LOCAL times
+------------------------------------------------------------
+GLT matrix from 'SYM: A -B':
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1  -1   0   0   0   0 
+ 
+------------------------------------------------------------
+GLT matrix from 'SYM: A -random':
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   0  -1   0   0   0 
+ 
+------------------------------------------------------------
+GLT matrix from 'SYM: A -Amove':
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   0   0  -1   0   0 
+ 
+------------------------------------------------------------
+GLT matrix from 'SYM: A -Bmove':
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   0   0   0  -1   0 
+ 
+------------------------------------------------------------
+GLT matrix from 'SYM: A -random_move':
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   0   0   0   0  -1 
+ 
+------------------------------------------------------------
+GLT matrix from 'SYM: B -random':
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1  -1   0   0   0 
+ 
+------------------------------------------------------------
+GLT matrix from 'SYM: B -Amove':
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   0  -1   0   0 
+ 
+------------------------------------------------------------
+GLT matrix from 'SYM: B -Bmove':
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   0   0  -1   0 
+ 
+------------------------------------------------------------
+GLT matrix from 'SYM: B -random_move':
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   0   0   0  -1 
+ 
+------------------------------------------------------------
+GLT matrix from 'SYM: random -Amove':
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1  -1   0   0 
+ 
+------------------------------------------------------------
+GLT matrix from 'SYM: random -Bmove':
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   0  -1   0 
+ 
+------------------------------------------------------------
+GLT matrix from 'SYM: random -random_move':
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   0   0  -1 
+ 
+------------------------------------------------------------
+GLT matrix from 'SYM: Amove -Bmove':
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1  -1   0 
+ 
+------------------------------------------------------------
+GLT matrix from 'SYM: Amove -random_move':
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   0  -1 
+ 
+------------------------------------------------------------
+GLT matrix from 'SYM: Bmove -random_move':
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1  -1 
+ 
+++ Number of time points: 2000 (no censoring)
+ + Number of parameters:  38 [32 baseline ; 6 signal]
+++ Wrote matrix values to file X.xmat.1D
+++ ----- Signal+Baseline matrix condition [X] (2000x38):  3.2686  ++ VERY GOOD ++
+++ ----- Signal-only matrix condition [X] (2000x6):  1.61417  ++ VERY GOOD ++
+++ ----- Baseline-only matrix condition [X] (2000x32):  1.00915  ++ VERY GOOD ++
+++ ----- polort-only matrix condition [X] (2000x32):  1.00915  ++ VERY GOOD ++
+++ Wrote matrix values to file X_XtXinv.xmat.1D
+++ +++++ Matrix inverse average error = 3.39213e-16  ++ VERY GOOD ++
+++ Matrix setup time = 0.37 s
+
+Stimulus: A 
+  h[ 0] norm. std. dev. =   0.0980
+
+Stimulus: B 
+  h[ 0] norm. std. dev. =   0.1336
+
+Stimulus: random 
+  h[ 0] norm. std. dev. =   0.1344
+
+Stimulus: Amove 
+  h[ 0] norm. std. dev. =   0.1058
+
+Stimulus: Bmove 
+  h[ 0] norm. std. dev. =   0.1374
+
+Stimulus: random_move 
+  h[ 0] norm. std. dev. =   0.1390
+
+General Linear Test: A-B 
+  LC[0] norm. std. dev. =   0.1102 
+
+General Linear Test: A-random 
+  LC[0] norm. std. dev. =   0.1105 
+
+General Linear Test: A-Amove 
+  LC[0] norm. std. dev. =   0.0986 
+
+General Linear Test: A-Bmove 
+  LC[0] norm. std. dev. =   0.1268 
+
+General Linear Test: A-random_move 
+  LC[0] norm. std. dev. =   0.1266 
+
+General Linear Test: B-random 
+  LC[0] norm. std. dev. =   0.1428 
+
+General Linear Test: B-Amove 
+  LC[0] norm. std. dev. =   0.1283 
+
+General Linear Test: B-Bmove 
+  LC[0] norm. std. dev. =   0.1770 
+
+General Linear Test: B-random_move 
+  LC[0] norm. std. dev. =   0.1551 
+
+General Linear Test: random-Amove 
+  LC[0] norm. std. dev. =   0.1282 
+
+General Linear Test: random-Bmove 
+  LC[0] norm. std. dev. =   0.1548 
+
+General Linear Test: random-random_move 
+  LC[0] norm. std. dev. =   0.1775 
+
+General Linear Test: Amove-Bmove 
+  LC[0] norm. std. dev. =   0.1071 
+
+General Linear Test: Amove-random_move 
+  LC[0] norm. std. dev. =   0.1075 
+
+General Linear Test: Bmove-random_move 
+  LC[0] norm. std. dev. =   0.1391 
+++ 3dTstat: AFNI version=AFNI_2011_12_21_1014 (Dec 16 2015) [64-bit]
+++ Authored by: KR Hammett & RW Cox
+*+ WARNING: Input dataset is not 3D+time; assuming TR=1.0
+++ Output dataset ./sum_ideal.1D

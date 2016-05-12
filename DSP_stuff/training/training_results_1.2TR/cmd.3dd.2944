@@ -1,0 +1,43 @@
+# -------------------------------------------------------
+# create 3dDeconvolve -nodata command
+
+3dDeconvolve                                                            \
+    -nodata 2000 1.200                                                  \
+    -polort 3                                                           \
+    -concat '1D: 0 250 500 750 1000 1250 1500 1750'                     \
+    -num_stimts 6                                                       \
+    -stim_times 1 stimes.2944_01_A.1D 'BLOCK(1.5,1)'                    \
+    -stim_label 1 A                                                     \
+    -stim_times 2 stimes.2944_02_B.1D 'BLOCK(1.5,1)'                    \
+    -stim_label 2 B                                                     \
+    -stim_times 3 stimes.2944_03_random.1D 'BLOCK(1.5,1)'               \
+    -stim_label 3 random                                                \
+    -stim_times 4 stimes.2944_04_Amove.1D 'BLOCK(3,1)'                  \
+    -stim_label 4 Amove                                                 \
+    -stim_times 5 stimes.2944_05_Bmove.1D 'BLOCK(3,1)'                  \
+    -stim_label 5 Bmove                                                 \
+    -stim_times 6 stimes.2944_06_random_move.1D 'BLOCK(3,1)'            \
+    -stim_label 6 random_move                                           \
+    -num_glt 15                                                         \
+    -gltsym 'SYM: A -B' -glt_label 1 A-B                                \
+    -gltsym 'SYM: A -random' -glt_label 2 A-random                      \
+    -gltsym 'SYM: A -Amove' -glt_label 3 A-Amove                        \
+    -gltsym 'SYM: A -Bmove' -glt_label 4 A-Bmove                        \
+    -gltsym 'SYM: A -random_move' -glt_label 5 A-random_move            \
+    -gltsym 'SYM: B -random' -glt_label 6 B-random                      \
+    -gltsym 'SYM: B -Amove' -glt_label 7 B-Amove                        \
+    -gltsym 'SYM: B -Bmove' -glt_label 8 B-Bmove                        \
+    -gltsym 'SYM: B -random_move' -glt_label 9 B-random_move            \
+    -gltsym 'SYM: random -Amove' -glt_label 10 random-Amove             \
+    -gltsym 'SYM: random -Bmove' -glt_label 11 random-Bmove             \
+    -gltsym 'SYM: random -random_move' -glt_label 12 random-random_move \
+    -gltsym 'SYM: Amove -Bmove' -glt_label 13 Amove-Bmove               \
+    -gltsym 'SYM: Amove -random_move' -glt_label 14 Amove-random_move   \
+    -gltsym 'SYM: Bmove -random_move' -glt_label 15 Bmove-random_move   \
+    -x1D X.xmat.1D
+
+# compute the sum of non-baseline regressors
+3dTstat -sum -prefix sum_ideal.1D X.xmat.1D'[32..$]'
+
+# consider plotting the SUM below non-polort regressors
+# command: 1dplot -xlabel Time -ynames SUM - sum_ideal.1D X.xmat.1D'[32..$]'

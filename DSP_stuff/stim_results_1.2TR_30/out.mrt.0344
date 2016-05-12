@@ -1,0 +1,81 @@
+
+++ total time = 300.0, (stim = 135.0, rest = 165.0)
+   init rest = 4.0, end rest = 12.0, min rest = 2.0
+   total ISI = 149.0, rand ISI = 29.0
+   rand ISI rest time = 290 intervals of 0.100 seconds
+
+
+++ total time = 300.0, (stim = 135.0, rest = 165.0)
+   init rest = 4.0, end rest = 12.0, min rest = 2.0
+   total ISI = 149.0, rand ISI = 29.0
+   rand ISI rest time = 290 intervals of 0.100 seconds
+
+
+++ total time = 300.0, (stim = 135.0, rest = 165.0)
+   init rest = 4.0, end rest = 12.0, min rest = 2.0
+   total ISI = 149.0, rand ISI = 29.0
+   rand ISI rest time = 290 intervals of 0.100 seconds
+
+
+++ total time = 300.0, (stim = 135.0, rest = 165.0)
+   init rest = 4.0, end rest = 12.0, min rest = 2.0
+   total ISI = 149.0, rand ISI = 29.0
+   rand ISI rest time = 290 intervals of 0.100 seconds
+
+
+++ total time = 300.0, (stim = 135.0, rest = 165.0)
+   init rest = 4.0, end rest = 12.0, min rest = 2.0
+   total ISI = 149.0, rand ISI = 29.0
+   rand ISI rest time = 290 intervals of 0.100 seconds
+
+
+++ total time = 300.0, (stim = 135.0, rest = 165.0)
+   init rest = 4.0, end rest = 12.0, min rest = 2.0
+   total ISI = 149.0, rand ISI = 29.0
+   rand ISI rest time = 290 intervals of 0.100 seconds
+
+
+++ total time = 300.0, (stim = 135.0, rest = 165.0)
+   init rest = 4.0, end rest = 12.0, min rest = 2.0
+   total ISI = 149.0, rand ISI = 29.0
+   rand ISI rest time = 290 intervals of 0.100 seconds
+
+
+++ total time = 300.0, (stim = 135.0, rest = 165.0)
+   init rest = 4.0, end rest = 12.0, min rest = 2.0
+   total ISI = 149.0, rand ISI = 29.0
+   rand ISI rest time = 290 intervals of 0.100 seconds
+
+writing timing file: stimes.0344_01_A5.1D
+writing timing file: stimes.0344_02_A10.1D
+writing timing file: stimes.0344_03_A30.1D
+writing timing file: stimes.0344_04_B5.1D
+writing timing file: stimes.0344_05_B10.1D
+writing timing file: stimes.0344_06_B30.1D
+writing timing file: stimes.0344_07_A5move.1D
+writing timing file: stimes.0344_08_A10move.1D
+writing timing file: stimes.0344_09_A30move.1D
+writing timing file: stimes.0344_10_B5move.1D
+writing timing file: stimes.0344_11_B10move.1D
+writing timing file: stimes.0344_12_B30move.1D
+saving 3dD command to file 'cmd.3dd.0344'...
+
+
+ISI statistics :
+
+data              min      mean     max     stdev
+-----------     -------  -------  -------  -------
+pre-rest          4.000    4.512    5.100    0.368
+post-rest        14.000   14.863   16.000    0.682
+
+run #0 ISI        2.000    2.464    4.000    0.427
+run #1 ISI        2.000    2.476    4.200    0.480
+run #2 ISI        2.000    2.466    3.700    0.436
+run #3 ISI        2.000    2.456    4.200    0.485
+run #4 ISI        2.000    2.473    3.900    0.477
+run #5 ISI        2.000    2.461    3.900    0.468
+run #6 ISI        2.000    2.469    3.800    0.513
+run #7 ISI        2.000    2.480    5.000    0.544
+
+all runs ISI      2.000    2.468    5.000    0.477
+

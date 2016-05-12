@@ -1,0 +1,9 @@
+make_random_timing.py \
+-num_runs 8 -run_time 300 \
+-num_stim 12 -num_reps 6 \
+-stim_labels A5 A10 A20 B5 B10 B20 A5move A10move A20move B5move B10move B20move \
+-stim_dur 2 2 2 2 2 2 3 3 3 3 3 3 \
+-ordered_stimuli A5 A5move -ordered_stimuli A10 A10move -ordered_stimuli A20 A20move \
+-ordered_stimuli B5 B5move -ordered_stimuli B10 B10move -ordered_stimuli B20 B20move \
+-pre_stim_rest 5 -post_stim_rest 10 -min_rest .5 -tr 2 -save_3dd_cmd sample_DSP_timing
+
