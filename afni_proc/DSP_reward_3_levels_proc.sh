@@ -3,26 +3,27 @@
 ## USAGE: standardproc.sh subject id
 
 subject=$1
-TMS_ROI=$2
 
-PROJ_PATH=/home/taraz/TMS_wormy/$subject/$TMS_ROI/
-STANDARDS_PATH=/home/taraz/standards/
+PROJ_PATH=/data/home/tarazlee/DSP/$subject/reward/
+
 cd $PROJ_PATH/afni_proc/
 pwd
 #source ~/.bashrc_MATT_source # need to source Matt's files for afni_proc
 echo "starting afni_proc"
-#-blocks align volreg tlrc mask scale blur regress 
 afni_proc.py \
   -bash \
-  -script 3_level_reward_proc_"$subject" \
-  -out_dir "$subject".3_level_reward_results \
+  -script reward_3_level_proc_"$subject" \
+  -out_dir "$subject".reward_3_level \
   -blocks mask regress  \
   -subj_id $subject \
   -dsets \
     "$subject".results/preproc.data/pb03."$subject".r*.scale+tlrc.HEAD \
   -scr_overwrite \
   -regress_basis GAM \
-  -regress_stim_types AM2 AM2 times times times times times times \
+  -regress_stim_types times times times times times times \
+                      times times times times times times \
+                      AM1 AM1 AM1 AM1 AM1 AM1 \
+                      AM1 AM1 AM1 AM1 AM1 AM1 \
   -regress_compute_tsnr no \
   -regress_est_blur_errts \
   -mask_apply epi \
@@ -35,23 +36,55 @@ afni_proc.py \
   -regress_est_blur_epits \
   -regress_errts_prefix ERRTS.$subject \
   -regress_stim_times \
-    "$PROJ_PATH"behavior/"$subject"_correct_AM2_move_blocked_onsets.txt \
-    "$PROJ_PATH"behavior/"$subject"_incorrect_AM2_move_blocked_onsets.txt \
-    "$PROJ_PATH"behavior/"$subject"_correct_5_reward_onsets.txt \
-    "$PROJ_PATH"behavior/"$subject"_correct_10_reward_onsets.txt \
-    "$PROJ_PATH"behavior/"$subject"_correct_40_reward_onsets.txt \
-    "$PROJ_PATH"behavior/"$subject"_incorrect_5_reward_onsets.txt \
-    "$PROJ_PATH"behavior/"$subject"_incorrect_10_reward_onsets.txt \
-    "$PROJ_PATH"behavior/"$subject"_incorrect_40_reward_onsets.txt \
+    "$PROJ_PATH"behavior/"$subject"_correct_A_05_reward_onsets.txt \
+    "$PROJ_PATH"behavior/"$subject"_correct_A_10_reward_onsets.txt \
+    "$PROJ_PATH"behavior/"$subject"_correct_A_30_reward_onsets.txt \
+    "$PROJ_PATH"behavior/"$subject"_correct_B_05_reward_onsets.txt \
+    "$PROJ_PATH"behavior/"$subject"_correct_B_10_reward_onsets.txt \
+    "$PROJ_PATH"behavior/"$subject"_correct_B_30_reward_onsets.txt \
+    "$PROJ_PATH"behavior/"$subject"_incorrect_A_05_reward_onsets.txt \
+    "$PROJ_PATH"behavior/"$subject"_incorrect_A_10_reward_onsets.txt \
+    "$PROJ_PATH"behavior/"$subject"_incorrect_A_30_reward_onsets.txt \
+    "$PROJ_PATH"behavior/"$subject"_incorrect_B_05_reward_onsets.txt \
+    "$PROJ_PATH"behavior/"$subject"_incorrect_B_10_reward_onsets.txt \
+    "$PROJ_PATH"behavior/"$subject"_incorrect_B_30_reward_onsets.txt \
+    "$PROJ_PATH"behavior/"$subject"_correct_A_05_move_onsets.txt \
+    "$PROJ_PATH"behavior/"$subject"_correct_A_10_move_onsets.txt \
+    "$PROJ_PATH"behavior/"$subject"_correct_A_30_move_onsets.txt \
+    "$PROJ_PATH"behavior/"$subject"_correct_B_05_move_onsets.txt \
+    "$PROJ_PATH"behavior/"$subject"_correct_B_10_move_onsets.txt \
+    "$PROJ_PATH"behavior/"$subject"_correct_B_30_move_onsets.txt \
+    "$PROJ_PATH"behavior/"$subject"_incorrect_A_05_move_onsets.txt \
+    "$PROJ_PATH"behavior/"$subject"_incorrect_A_10_move_onsets.txt \
+    "$PROJ_PATH"behavior/"$subject"_incorrect_A_30_move_onsets.txt \
+    "$PROJ_PATH"behavior/"$subject"_incorrect_B_05_move_onsets.txt \
+    "$PROJ_PATH"behavior/"$subject"_incorrect_B_10_move_onsets.txt \
+    "$PROJ_PATH"behavior/"$subject"_incorrect_B_30_move_onsets.txt \
    -regress_stim_labels \
-    cor_move \
-    incor_move \
-    c_5_reward \
-    c_10_reward \
-    c_40_reward \
-    i_5_reward \
-    i_10_reward \
-    i_40_reward \
+    c_A_05_reward \
+    c_A_10_reward \
+    c_A_30_reward \
+    c_B_05_reward \
+    c_B_10_reward \
+    c_B_30_reward \
+    i_A_05_reward \
+    i_A_10_reward \
+    i_A_30_reward \
+    i_B_05_reward \
+    i_B_10_reward \
+    i_B_30_reward \
+    c_A_05_move \
+    c_A_10_move \
+    c_A_30_move \
+    c_B_05_move \
+    c_B_10_move \
+    c_B_30_move \
+    i_A_05_move \
+    i_A_10_move \
+    i_A_30_move \
+    i_B_05_move \
+    i_B_10_move \
+    i_B_30_move \
   -regress_reml_exec \
   -test_stim_files no \
   -regress_opts_reml -GOFORIT \
@@ -60,20 +93,37 @@ afni_proc.py \
   -regress_make_cbucket yes \
   -regress_opts_3dD \
   -GOFORIT 6 \
-  -num_glt 7 \
-  -gltsym     "SYM: +.33*c_5_reward +.33*c_10_reward +.33*c_40_reward -.33*i_5_reward -.33*i_10_reward -.33*i_40_reward" \
-  -glt_label 1 "cor-incor" \
-  -gltsym     "SYM: +.5*i_5_reward +.5*c_5_reward" \
-  -glt_label 2 "5_rew" \
-  -gltsym     "SYM: +.5*i_10_reward +.5*c_10_reward" \
-  -glt_label 3 "10_rew" \
-  -gltsym     "SYM: +.5*i_40_reward +.5*c_40_reward" \
-  -glt_label 4 "40_rew" \
-  -gltsym     "SYM: +c_5_reward -i_5_reward" \
-  -glt_label 5 "5_c-i" \
-  -gltsym     "SYM: +c_10_reward -i_10_reward" \
-  -glt_label 6 "10_c-i" \
-  -gltsym     "SYM: +c_40_reward -i_40_reward" \
-  -glt_label 7 "40_c-i" \
+  -num_glt 13 \
+  -gltsym     "SYM: +.1667*c_A_05_reward +.1667*c_A_10_reward +.1667*c_A_30_reward \
+                +.1667*c_B_05_reward +.1667*c_B_10_reward +.1667*c_B_30_reward" \
+  -glt_label 1 "c_reward" \
+  -gltsym     "SYM: +.1667*c_A_05_move +.1667*c_A_10_move +.1667*c_A_30_move \
+                +.1667*c_B_05_move +.1667*c_B_10_move +.1667*c_B_30_move" \
+  -glt_label 2 "c_move" \
+  -gltsym     "SYM: +.3333*c_A_05_reward +.3333*c_A_10_reward +.3333*c_A_30_reward \
+                -.3333*c_B_05_reward -.3333*c_B_10_reward -.3333*c_B_30_reward" \
+  -glt_label 3 "A-B_reward" \
+  -gltsym     "SYM: +.3333*c_A_05_move +.3333*c_A_10_move +.3333*c_A_30_move \
+                -.3333*c_B_05_move -.3333*c_B_10_move -.3333*c_B_30_move" \
+  -glt_label 4 "A-B_move" \
+  -gltsym     "SYM: +.5*c_A_10_reward +.5*c_B_10_reward -.5*c_A_05_reward -.5*c_B_05_reward" \
+  -glt_label 5 "10-5_c_rew" \
+  -gltsym     "SYM: +.5*c_A_30_reward +.5*c_B_30_reward -.5*c_A_05_reward -.5*c_B_05_reward" \
+  -glt_label 6 "30-5_c_rew" \
+  -gltsym     "SYM: +.5*c_A_30_reward +.5*c_B_30_reward -.5*c_A_10_reward -.5*c_B_10_reward" \
+  -glt_label 7 "30-10_c_rew" \
+  -gltsym     "SYM: +.5*i_A_10_reward +.5*i_B_10_reward -.5*i_A_05_reward -.5*i_B_05_reward" \
+  -glt_label 8 "10-5_i_rew" \
+  -gltsym     "SYM: +.5*i_A_30_reward +.5*i_B_30_reward -.5*i_A_05_reward -.5*i_B_05_reward" \
+  -glt_label 9 "30-5_i_rew" \
+  -gltsym     "SYM: +.5*i_A_30_reward +.5*i_B_30_reward -.5*i_A_10_reward -.5*i_B_10_reward" \
+  -glt_label 10 "30-10_i_rew" \
+  -gltsym     "SYM: +.5*c_A_05_reward +.5*c_B_05_reward -.5*i_A_05_reward -.5*c_B_05_reward" \
+  -glt_label 11 "05_c-i_rew" \
+  -gltsym     "SYM: +.5*c_A_10_reward +.5*c_B_10_reward -.5*i_A_10_reward -.5*c_B_10_reward" \
+  -glt_label 12 "10_c-i_rew" \
+  -gltsym     "SYM: +.5*c_A_30_reward +.5*c_B_30_reward -.5*i_A_30_reward -.5*c_B_30_reward" \
+  -glt_label 13 "30_c-i_rew" \
+
 
 

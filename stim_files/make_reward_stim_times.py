@@ -70,10 +70,10 @@ def main():
                             B_offset = trial['move_offset']/1000.
                             B_move_onsets[runNum].append("%.2f:%f" % (B_onset, B_offset-B_onset))
                         
-            makeStimFiles(beh_path,SUB, stem+'_A_'+str(val)+rewFileStem, A_rew_onsets)
-            makeStimFiles(beh_path,SUB, stem+'_B_'+str(val)+rewFileStem, B_rew_onsets)
-            makeStimFiles(beh_path,SUB, stem+'_A_'+str(val)+moveOnsetFileStem, A_move_onsets)
-            makeStimFiles(beh_path,SUB, stem+'_B_'+str(val)+moveOnsetFileStem, B_move_onsets)
+            makeStimFiles(beh_path,SUB, stem+'_A_'+str(val).zfill(2)+rewFileStem, A_rew_onsets)
+            makeStimFiles(beh_path,SUB, stem+'_B_'+str(val).zfill(2)+rewFileStem, B_rew_onsets)
+            makeStimFiles(beh_path,SUB, stem+'_A_'+str(val).zfill(2)+moveOnsetFileStem, A_move_onsets)
+            makeStimFiles(beh_path,SUB, stem+'_B_'+str(val).zfill(2)+moveOnsetFileStem, B_move_onsets)
 
             
                    

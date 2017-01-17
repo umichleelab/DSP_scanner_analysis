@@ -70,14 +70,14 @@ def main():
                         rand_cue_onsets[runNum].append("%.2f" % (trial['cue_onset']/1000.))
                         rand_onset = trial['move_onset']/1000.
                         rand_offset = trial['move_offset']/1000.
-                        rand_move_onsets[runNum].append("%.2f:%f" % (A_onset, A_offset-A_onset))
+                        rand_move_onsets[runNum].append("%.2f:%f" % (rand_onset, rand_offset-rand_onset))
                     
-        makeStimFiles(beh_path,SUB, stem+'_A_'+cueFileStem, A_cue_onsets)
-        makeStimFiles(beh_path,SUB, stem+'_B_'+cueFileStem, B_cue_onsets)
-        makeStimFiles(beh_path,SUB, stem+'_A_'+moveOnsetFileStem, A_move_onsets)
-        makeStimFiles(beh_path,SUB, stem+'_B_'+moveOnsetFileStem, B_move_onsets)
-        makeStimFiles(beh_path,SUB, stem+'_rand_'+cueFileStem, rand_cue_onsets)
-        makeStimFiles(beh_path,SUB, stem+'_rand_'+moveOnsetFileStem, rand_cue_onsets)
+        makeStimFiles(beh_path,SUB, stem+'_A'+cueFileStem, A_cue_onsets)
+        makeStimFiles(beh_path,SUB, stem+'_B'+cueFileStem, B_cue_onsets)
+        makeStimFiles(beh_path,SUB, stem+'_A'+moveOnsetFileStem, A_move_onsets)
+        makeStimFiles(beh_path,SUB, stem+'_B'+moveOnsetFileStem, B_move_onsets)
+        makeStimFiles(beh_path,SUB, stem+'_rand'+cueFileStem, rand_cue_onsets)
+        makeStimFiles(beh_path,SUB, stem+'_rand'+moveOnsetFileStem, rand_move_onsets)
                    
 if __name__ == '__main__':
     main()
